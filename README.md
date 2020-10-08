@@ -15,8 +15,7 @@ bot.token("TOKEN HERE")
   ```
   
   
-  ```The prefix is tt! which will be customisable in mere future
-```
+  ```The prefix is tt! which will be customisable in mere future```
 
 and that is it !!!
 It will work 
