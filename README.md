@@ -3,7 +3,7 @@
 <h1> This is for the ones using npm package</h1>
 First you need to install using 
 
-npm i discord-ticket
+```npm i discord-ticket```
 
 Once you do so you need to do this 
 
@@ -11,9 +11,12 @@ Once you do so you need to do this
 
 ```javascript
 const bot = require('discord-ticket')
-  
-  bot.token("TOKEN HERE")
+bot.token("TOKEN HERE")
   ```
+  
+  
+  ```The prefix is tt! which will be customisable in mere future
+```
 
 and that is it !!!
 It will work 
