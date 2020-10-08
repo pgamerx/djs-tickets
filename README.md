@@ -9,8 +9,8 @@ Once you do so you need to do this
 
 
 
-const bot = require('discord-ticket')
-bot.token("TOKEN HERE")
+<p>const bot = require('discord-ticket')</p>
+<p>bot.token("TOKEN HERE")</p>
 
 
 and that is it !!!
