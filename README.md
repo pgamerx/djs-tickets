@@ -17,11 +17,10 @@ bot.token("TOKEN HERE")
   
   <h2>The prefix is tt! which will be customisable in mere future</h2>
 
-and that is it !!!
+That is it !!!
 It will work 
 
-The prefix is tt! which will be customisable in mere future
-
+<h1>Now for the people who are cloning this repo</h1>
 
 
 
