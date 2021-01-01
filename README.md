@@ -1,6 +1,6 @@
 <h1>Npm Package end</h1>
 THE NPM PACKAGE IS SCHEDULED TO BE DISCONTINUED ON 4th OF JANUARY , 2021. THE BOT WILL STILL BE OPEN SOURCE ON 
-[Github Repo](https://github.com/PGamerXstudio/discordticket)
+https://github.com/PGamerXstudio/discordticket
 
 
 
