@@ -1,7 +1,7 @@
 {
   "name": "djs-tickets",
   "version": "5.0.1",
-  "description": "An easy to setup ticket system discord bot for Djs v12, works for unlimited servers",
+  "description": "An easy to setup ticket system discord bot for Djs v12/v13, works for unlimited servers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
