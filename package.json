@@ -26,14 +26,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PGamerXstudio/discordticket.git"
+    "url": "git+https://github.com/pgamerx/djs-tickets.git"
   },
   "author": "PGamerX",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PGamerXstudio/discordticket/issues"
+    "url": "https://github.com/pgamerx/djs-tickets/issues"
   },
-  "homepage": "https://github.com/PGamerXstudio/discordticket#readme",
+  "homepage": "https://github.com/pamerx/djs-tickets#readme",
   "dependencies": {
     "discord.js": "^13.2.0",
     "enmap": "^5.8.7"
