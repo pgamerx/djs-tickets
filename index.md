@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+--- 
+title: Djs-Tickets 
+---
 
-You can use the [editor on GitHub](https://github.com/pgamerx/djs-tickets/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Installation
+```txt
+npm i djs-tickets
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Delcaration
+```js
+const ts = require('djs-tickets')
+```
 
-### Jekyll Themes
+## Initialising (Mandatory)
+```js
+ts.start(client)
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pgamerx/djs-tickets/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Setup Ticket
+```js
+ts.setup(Message,ChannelID)
+```
+- Message: (Object) is the object provided in client.on('messageCreate') event, if you want to use with slash command, you can provide Interaction which is provided in client.on('InteractionCreate') event in Djs v13.     
+- ChannelID: (String) is the channelID where you want bot to send the message to which people can react to and open a ticket, more customisation soon... 
 
-### Support or Contact
+## Closing Ticket
+```js
+ts.close(Message,Transcript)
+```
+- Message: (Object) is the object provided in client.on('messageCreate') event, if you want to use with slash command, you can provide Interaction which is provided in client.on('InteractionCreate') event in Djs v13.    
+- Transcript: (Boolean) If you want bot to send transcript, set this parameter as true.      
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+⚠️ This function will only work in a ticket channel, you don't need to add a manual check yourself :)
+## Support
+Feel free to ask for support in [Discord Server](https://u.pgamerx.com/discord)
+
