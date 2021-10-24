@@ -33,5 +33,9 @@
   "bugs": {
     "url": "https://github.com/PGamerXstudio/discordticket/issues"
   },
-  "homepage": "https://github.com/PGamerXstudio/discordticket#readme"
+  "homepage": "https://github.com/PGamerXstudio/discordticket#readme",
+  "dependencies": {
+    "discord.js": "^13.2.0",
+    "enmap": "^5.8.7"
+  }
 }

@@ -28,5 +28,6 @@ ts.close(message /*An Object*/,transcript /*A boolean*/)
 
 // BOT WILL AUTOMATICALLY CHECK IF THE CHANNEL IS A TICKET OR NOT, AND, CLOSE ONLY IF IT IS ONE
 ```
-
+## Support
+Feel free to ask for support in [Discord Server](https://u.pgamerx.com/discord)
 
