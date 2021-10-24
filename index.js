@@ -71,26 +71,29 @@ async function setup(message,channelID){
       message.channel.send("Ticket System Setup Done!");
 }
 
-async function close(message){
+async function close(message,transcript){
   if (!message.channel.name.includes("ticket-"))
   return message.channel.send("You cannot use that here!");
 let channel = message.channel
-channel.messages.fetch({limit:80})
-.then(function(messages) {
+
+if(transcript === true){
+  channel.messages.fetch({limit:80})
+  .then(function(messages) {
     let content = messages.map(message => message.content && message.content).join("\n");
     message.author.send(`Transcript for your ticket in ${message.guild.name} Server`);
     message.author.send({ files: [{ name: "transcript.txt", attachment: Buffer.from(content) }] });
   message.channel.send(`I have dmed you transcript if your dms are opened. Deleting channel in 20 seconds`)
   message.channel.send(`Just in case Your dms are closed here is transcript`)
   message.channel.send({ files: [{ name: "transcript.txt", attachment: Buffer.from(content) }] });  
-
-
   })
  setTimeout(function() {
     message.channel.delete();
-     })
+     },20000)
     }
-
+    else{
+      message.channel.delete()
+    }
+}
 module.exports.setup = setup
 module.exports.start = start
 module.exports.close = close
