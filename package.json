@@ -1,6 +1,6 @@
 {
   "name": "djs-tickets",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "An easy to setup ticket system discord bot for Djs v12/v13, works for unlimited servers",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/pgamerx/djs-tickets/issues"
   },
-  "homepage": "https://github.com/pamerx/djs-tickets#readme",
+  "homepage": "https://djs-tickets.js.org",
   "dependencies": {
     "discord.js": "^13.2.0",
     "enmap": "^5.8.7"
