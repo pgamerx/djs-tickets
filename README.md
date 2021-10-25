@@ -1,33 +1,32 @@
 ## Installation
-```npm i djs-tickets```
+```txt
+npm i djs-tickets
+```
 
 ## Delcaration
 ```js
 const ts = require('djs-tickets')
 ```
 
-## Functions
-### Starting up the system
+## Initialising (Mandatory)
 ```js
-// Initiating The System (Mandatory)
-ts.start(client/*An Object*/)
+ts.start(client)
 ```
-### Setting-up up the system in a specific channel
+
+## Setup Ticket
 ```js
-ts.setup(Message/Interaction/*An Object*/,ChannelID/*A String*/)
-// Message object is the object provided in client.on('messageCreate') event, if you want to use with slash command, you can provide Interaction which is provided in client.on('InteractionCreate') event in Djs v13
-
-// ChannelID is the channelID where you want bot to send the message to which people can react to and open a ticket, more customisation soon...
- ```
-### Closing
-```js
-ts.close(message /*An Object*/,transcript /*A boolean*/)
-// Message object is the object provided in client.on('messageCreate') event, if you want to use with slash command, you can provide Interaction which is provided in client.on('InteractionCreate') event in Djs v13
-
-// If you want bot to send transcript, set second parameter as true. 
-
-// BOT WILL AUTOMATICALLY CHECK IF THE CHANNEL IS A TICKET OR NOT, AND, CLOSE ONLY IF IT IS ONE
+ts.setup(Message,ChannelID)
 ```
+- Message: (Object) is the object provided in client.on('messageCreate') event, if you want to use with slash command, you can provide Interaction which is provided in client.on('InteractionCreate') event in Djs v13.     
+- ChannelID: (String) is the channelID where you want bot to send the message to which people can react to and open a ticket, more customisation soon... 
+
+## Closing Ticket
+```js
+ts.close(Message,Transcript)
+```
+- Message: (Object) is the object provided in client.on('messageCreate') event, if you want to use with slash command, you can provide Interaction which is provided in client.on('InteractionCreate') event in Djs v13.    
+- Transcript: (Boolean) If you want bot to send transcript, set this parameter as true.      
+
+⚠️ This function will only work in a ticket channel, you don't need to add a manual check yourself :)
 ## Support
 Feel free to ask for support in [Discord Server](https://u.pgamerx.com/discord)
-
