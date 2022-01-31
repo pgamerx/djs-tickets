@@ -10,11 +10,11 @@ const ts = require('djs-tickets')
 
 ## Initialising (Mandatory)
 ```js
-ts.start(client,Embed(optional))     
+ts.start(Client,Embed(optional))     
 ```
 - **Client**: *(Object)* is the Client object of the bot, which is required for the ticket system to work.
 - Embed: *(DiscordJS-Embed)* is the embed which you want to be sent in the ticket channel when ticket is opened.
-## Setup Ticket
+## Setup Ticket 
 ```js
 ts.setup(Message,ChannelID,Embed(optional))
 ```
