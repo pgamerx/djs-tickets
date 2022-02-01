@@ -93,6 +93,7 @@
   };
   
   const setup = async (MessageObject: any, ChannelID: string, Embed?: any) => {
+    if(!MessageObject || !ChannelID) throw new Error('Proper Arguments Not Provided!');
     const channel = MessageObject.guild.channels.cache.find((channel: { id: any }) => channel.id === ChannelID);
     const temp_embed = new Discord.MessageEmbed()
       .setTitle('Ticket System')
@@ -109,6 +110,7 @@
   };
   
   const close = async (message: any, transcript: any) => {
+    if(!message || !transcript) throw new Error('Proper Arguments Not Provided!');
     if (!message.channel.name.includes('ticket-')) return message.channel.send('You cannot use that here!');
     const channel = message.channel;
   
