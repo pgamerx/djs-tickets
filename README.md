@@ -30,5 +30,53 @@ ts.close(Message,Transcript)
 - **Transcript**: *(Boolean)* If you want bot to send transcript, set this parameter as true.      
 
 ⚠️ This function will only work in a ticket channel, you don't need to add a manual check yourself :)
+
+# Generated Documentation 
+### Table of Contents
+
+*   [start][3]
+    *   [Parameters][4]
+*   [setup][5]
+    *   [Parameters][6]
+*   [close][7]
+    *   [Parameters][8]
+
+## start
+
+### Parameters
+
+*   `client`  The Client object of the bot. (Discord.Client) - Required
+*   `MessageEmbed`  The MessageEmbed object to be used for the ticket. (Discord.MessageEmbed) - Optional
+
+##
+
+Doesn't allow me to use Discord.Client
+
+## setup
+
+### Parameters
+
+*   `MessageObject`  The Message Object of the message to be used for the ticket. (Discord.Message) - Required
+*   `ChannelID`  The ID of the channel to be used for the ticket. (String) - Required
+*   `Embed`  The MessageEmbed object to be used for the ticket. (Discord.MessageEmbed) - Optional
+
+## close
+
+### Parameters
+
+*   `message`  The Message Object of the message to be used for the ticket. (Discord.Message) - Required
+*   `transcript`  The Boolean value to be used for the transcript. (Boolean) - Required
+
+[3]: #start
+
+[4]: #parameters
+
+[5]: #setup
+
+[6]: #parameters-1
+
+[7]: #close
+
+[8]: #parameters-2
 ## Support
 Feel free to ask for support in [Discord Server](https://u.pgamerx.com/discord)

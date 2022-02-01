@@ -9,7 +9,13 @@
     cloneLevel: 'deep',
     fetchAll: true,
   });
-  
+
+  /**
+   * 
+   * @param client The Client object of the bot. (Discord.Client) - Required
+   * @param MessageEmbed The MessageEmbed object to be used for the ticket. (Discord.MessageEmbed) - Optional
+   */
+
   const start = (client: any /** Doesn't allow me to use Discord.Client*/, MessageEmbed?: any) => {
     if (!client) throw new Error('Client not provided, kindly refer to the documentation!');
     if (typeof client !== typeof Discord.Client)
@@ -92,6 +98,12 @@
     );
   };
   
+  /**
+   * 
+   * @param MessageObject The Message Object of the message to be used for the ticket. (Discord.Message) - Required
+   * @param ChannelID The ID of the channel to be used for the ticket. (String) - Required
+   * @param Embed The MessageEmbed object to be used for the ticket. (Discord.MessageEmbed) - Optional
+   */
   const setup = async (MessageObject: any, ChannelID: string, Embed?: any) => {
     if(!MessageObject || !ChannelID) throw new Error('Proper Arguments Not Provided!');
     const channel = MessageObject.guild.channels.cache.find((channel: { id: any }) => channel.id === ChannelID);
@@ -109,6 +121,12 @@
     MessageObject.channel.send('Ticket System Setup Done!');
   };
   
+  /**
+   * 
+   * @param message The Message Object of the message to be used for the ticket. (Discord.Message) - Required 
+   * @param transcript The Boolean value to be used for the transcript. (Boolean) - Required
+   * @returns 
+   */
   const close = async (message: any, transcript: any) => {
     if(!message || !transcript) throw new Error('Proper Arguments Not Provided!');
     if (!message.channel.name.includes('ticket-')) return message.channel.send('You cannot use that here!');
