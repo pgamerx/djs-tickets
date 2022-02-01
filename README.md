@@ -48,10 +48,6 @@ ts.close(Message,Transcript)
 *   `client`  The Client object of the bot. (Discord.Client) - Required
 *   `MessageEmbed`  The MessageEmbed object to be used for the ticket. (Discord.MessageEmbed) - Optional
 
-##
-
-Doesn't allow me to use Discord.Client
-
 ## setup
 
 ### Parameters
